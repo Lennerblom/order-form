@@ -1,0 +1,35 @@
+<DOCTYPE! html>
+<html>
+    <head>
+    </head>
+    <body>
+            <!-- It should display all items currently in the order with a picture of the item.
+            Each order should have a button "Delete this item" that will remove that order from the DOM (and array of ordered items) when it is clicked.
+            Text inputs for each of: name, street, city, state, ZIP code, and phone number
+            An input of type="number" to enter a 16-digit credit card number
+            A "Process Order" button to submit the order. When the order is submitted, all of the input fields should be cleared
+            -->
+    <form>
+      <fieldset>
+        <legend>Enter Address and Contact Info</legend>
+        <label for="name">Name: </label>
+        <input name="name" type="text" />
+        <label for="city">City: </label>
+        <input name="city" type="text" />
+        <label for="state">State: </label>
+        <input name="state" type="text" />
+        <label for="zip">Zip Code: </label>
+        <input name="zip" type="text"/>
+        <label for="phone">Phone Number: </label>
+        <input name="phone" type="text"/>
+        <label for="number">Credit Card Number: </label>
+        <input name = "number" type="text"/> <!-- make sure to parseInt else "please enter a number" -->
+        <button type="submit">Process Order</button> <!-- when you press this it will fire an event listener that will clear all the text fields -->
+      </fieldset>
+      <h2>List of Orders</h2>
+      <ul id ="orders">
+
+      </ul>
+    </form>
+  </body>
+</html>
