@@ -10,6 +10,16 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li class="navlist">
+            <a class="navlist" href="index.html">Home</a>
+            </li>
+            <li class="navlist">
+            <a class="navlist" href="cart.html">Cart</a>
+            </li>
+        </ul>
+    </nav>
     <form id="orderForm">
         <fieldset>
             <legend>BusMall Order Form</legend>
@@ -31,13 +41,11 @@
                 <option value="usb">USB</option>
                 <option value="water-can">Water Can</option>
                 <option value="img/wine-glass.jpg">Wine Glass</option>
-                <input name="quantity" type="number" value=""/>
-                <button id="addToCart" type="submit">Add to Cart</button>
             </select>
-
+            <input name="quantity" type="number" value=""/>
+            <button id="addToCart" type="submit">Add to Cart</button>
         </fieldset>
     </form>
-    <ul id='cartList'>Cart List</ul>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
