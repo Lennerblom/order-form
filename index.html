@@ -6,14 +6,14 @@
     <title>Order Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="app.js"></script>
+    
 </head>
 
 <body>
     <form id="orderForm">
         <fieldset>
             <legend>BusMall Order Form</legend>
-            <select name="allProducts">
+            <select id="product" name="products">
                 <option value="bag">Bag</option>
                 <option value="banana">Banana</option>
                 <option value="bathroom">Bathroom</option>
@@ -30,12 +30,14 @@
                 <option value="unicorn">Unicorn</option>
                 <option value="usb">USB</option>
                 <option value="water-can">Water Can</option>
-                <option value="wine-glass">Wine Glass</option>
-                <input type="number" value="bathroom"/>
-                <button type="submit">Add to Cart</button>
+                <option value="img/wine-glass.jpg">Wine Glass</option>
+                <input name="quantity" type="number" value=""/>
+                <button id="addToCart" type="submit">Add to Cart</button>
             </select>
 
         </fieldset>
     </form>
+    <ul id='cartList'>Cart List</ul>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
